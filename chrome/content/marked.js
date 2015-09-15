@@ -462,7 +462,8 @@ var inline = {
 };
 
 inline._inside = /(?:\[[^\]]*\]|[^\[\]]|\](?=[^\[]*\]))*/;
-inline._href = /\s*<?([\s\S]*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/;
+// inline._href = /\s*<?([\s\S]*?)>?(?:\s+['"]([\s\S]*?)['"])?\s*/;
+inline._href = /\s*(\S+)\s*/;
 
 inline.link = replace(inline.link)
   ('inside', inline._inside)
@@ -863,7 +864,7 @@ Renderer.prototype.link = function(href, title, text) {
   if (this.options.sanitize) {
     try {
       var prot = decodeURIComponent(unescape(href))
-        .replace(/[^\w:]/g, '')
+        // .replace(/[^\w:]/g, '')
         .toLowerCase();
     } catch (e) {
       return '';

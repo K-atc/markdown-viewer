@@ -5,9 +5,9 @@
 		<em:version>1.8</em:version>
 		<em:type>2</em:type>
 
-		<em:name>Markdown Viewer</em:name>
-		<em:creator>Thiht</em:creator>
-		<em:description>Markdown document viewer.</em:description>
+		<em:name>Markdown Viewer(K_atc)</em:name>
+		<em:creator>K_Atc</em:creator>
+		<em:description>Fork of Thiht/markdown-viewer</em:description>
 		<em:iconURL>chrome://markdown-viewer/skin/icon32.png</em:iconURL>
 
 		<!-- Firefox -->
